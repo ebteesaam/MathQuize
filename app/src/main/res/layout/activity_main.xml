@@ -1,15 +1,15 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="15dp"
         android:orientation="vertical"
+        android:padding="15dp"
         tools:context="com.example.android.mathmaticalapp.MainActivity">
 
         <TextView
@@ -17,57 +17,119 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="Quize Math"
-            android:textSize="24sp"
             android:textColor="#E65100"
-            />
+            android:textSize="24sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="please unswer this question:"
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="6 * 4 ="
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton
+
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/radio1"
-                android:onClick="RadioButton"
-                />
-            <TextView
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioQuestion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="6 * 4 ="
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="24"
-                android:textSize="15sp"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="RadioButton"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="21"
-                android:textSize="15sp"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="RadioButton"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="23"
-                android:textSize="15sp"/>
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioQuestion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:textSize="15sp" />
+            </RadioGroup>
         </LinearLayout>
 
         <TextView
@@ -75,44 +137,47 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="6 * 5 ="
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="CheckBox"
-                />
+                android:onClick="CheckBox" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="25"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
+
             <CheckBox
+                android:id="@+id/checkboxQuestion3_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/redio2"
-                android:onClick="CheckBox"
-                />
+                android:onClick="CheckBox" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
+
             <CheckBox
+                android:id="@+id/checkboxQuestion3_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/radio6"
-                android:onClick="CheckBox"
-                />
+                android:onClick="CheckBox" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="6*5"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
         </LinearLayout>
 
         <TextView
@@ -120,133 +185,47 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="6 * 6 ="
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="CheckBox"
-                />
+                android:onClick="CheckBox" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="34"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
+
             <CheckBox
+                android:id="@+id/checkboxQuestion4_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/radio3"
-                android:onClick="CheckBox"
-                />
+                android:onClick="CheckBox" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="36"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
+
             <CheckBox
+                android:id="@+id/checkboxQuestion4_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/radio7"
-                android:onClick="CheckBox"
-                />
+                android:onClick="CheckBox" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9*4"
-                android:textSize="15sp"/>
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:text="6 * 7 ="
-            android:textSize="15sp"
-            />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radio4"
-                android:onClick="CheckBox"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="42"
-                android:textSize="15sp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="CheckBox"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="60"
-                android:textSize="15sp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radio8"
-                android:onClick="CheckBox"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="21*2"
-                android:textSize="15sp"/>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:text="6 * 100 ="
-            android:textSize="15sp"
-            />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="CheckBox"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6"
-                android:textSize="15sp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radio5"
-                android:onClick="CheckBox"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="600"
-                android:textSize="15sp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radio9"
-                android:onClick="CheckBox"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="60*10"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
         </LinearLayout>
 
         <TextView
@@ -254,27 +233,27 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="6 * 1000 ="
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
+
         <EditText
+            android:id="@+id/editTextQuestion5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="answer"
-            android:id="@+id/editText"
-            android:onClick="EditText"/>
+            android:hint="answer" />
+
         <TextView
+            android:id="@+id/txtresult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:textSize="20sp"
-            android:id="@+id/txt"/>
+            android:textSize="20sp" />
 
         <Button
+            android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Final result"
-            android:id="@+id/result"
-            android:onClick="Score"/>
+            android:onClick="Score"
+            android:text="Final result" />
 
 
     </LinearLayout>
