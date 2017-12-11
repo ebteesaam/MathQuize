@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+//score
     int score=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
