@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     int score = 0;
 
     @Override
+    //oncreate
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void EditText(View view) {
 
-        EditText editText = (EditText) findViewById(R.id.editTextQuestion5);
+        EditText editText =  findViewById(R.id.editTextQuestion5);
         String answer = editText.getText().toString();
         String trueanswer = "6000";
 
@@ -102,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
     public void Score(View view) {
         EditText(view);
         TextView txt = findViewById(R.id.txtresult);
-        txt.setText("The result :  " + String.valueOf(score) + " ");
+        String result="The result :  " + String.valueOf(score) + " ";
+        txt.setText(result);
 
     }
 }
