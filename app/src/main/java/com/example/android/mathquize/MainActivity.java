@@ -12,38 +12,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    //score
     int score = 0;
 
     @Override
-    //oncreate...
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
-
     public void CheckBox(View view) {
-
-       
 
         CheckBox ch1=findViewById(R.id.checkboxQuestion3_1);
         CheckBox ch2=findViewById(R.id.checkboxQuestion3_2);
         CheckBox ch3=findViewById(R.id.checkboxQuestion3_3);
 
-
-        if((ch3.isChecked()==true && ch2.isChecked()==true)&& (ch1.isChecked()==false))  {
+        if((ch3.isChecked() && ch2.isChecked())&& (!ch1.isChecked()))  {
             Toast.makeText(this, "Correct!! Good jop", Toast.LENGTH_SHORT).show();
             score=score+ 1;
-
         }else
             Toast.makeText(this, " try again please", Toast.LENGTH_SHORT).show();
-
-
         }
-
-
 
     public void RadioButton(View view) {
         boolean check = ((RadioButton) view).isChecked();
@@ -62,14 +50,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             default:
                 Toast.makeText(this, "the answer is false.. try again please", Toast.LENGTH_SHORT).show();
-
         }
-
-
     }
 
     public void EditText(View view) {
-
         EditText editText =  findViewById(R.id.editTextQuestion5);
         String answer = editText.getText().toString();
         String trueanswer = "6000";
@@ -77,10 +61,8 @@ public class MainActivity extends AppCompatActivity {
         if (answer.contentEquals(trueanswer)) {
             Toast.makeText(this, "Correct!! Good jop", Toast.LENGTH_SHORT).show();
             score = score + 1;
-
         } else {
             Toast.makeText(this, "the answer is false.. try again please", Toast.LENGTH_SHORT).show();
-
         }
     }
 
@@ -91,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         txt.setText(result);
         Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
         Reset(view);
-
     }
     public void Reset(View view){
         score=0;
@@ -107,6 +88,5 @@ public class MainActivity extends AppCompatActivity {
         ch1.setChecked(false);
         ch2.setChecked(false);
         ch3.setChecked(false);
-
     }
 }
