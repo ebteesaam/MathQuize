@@ -1,5 +1,4 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -182,54 +181,6 @@
                 android:text="6*5"
                 android:textSize="15sp" />
         </LinearLayout>
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingTop="16dp"-->
-            <!--android:text="6 * 6 ="-->
-            <!--android:textSize="15sp" />-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<CheckBox-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:onClick="CheckBox" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="34"-->
-                <!--android:textSize="15sp" />-->
-
-            <!--<CheckBox-->
-                <!--android:id="@+id/checkboxQuestion4_1"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:onClick="CheckBox" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="36"-->
-                <!--android:textSize="15sp" />-->
-
-            <!--<CheckBox-->
-                <!--android:id="@+id/checkboxQuestion4_2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:onClick="CheckBox" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="9*4"-->
-                <!--android:textSize="15sp" />-->
-        <!--</LinearLayout>-->
 
         <TextView
             android:layout_width="match_parent"
